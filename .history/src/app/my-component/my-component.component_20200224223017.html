@@ -1,0 +1,33 @@
+<div class="center">
+  <h2>My Pockemeon</h2>
+<!-- <form (ngSubmit)="onSubmit(f)" #f="ngForm"> -->
+      <input [(ngModel)]="test"  >
+    <!-- like -->
+    <select [(ngModel)]="selected" >
+        <option *ngFor="let item of pockemons|filterPokemonPipe:'name':test" [ngValue]="item" >{{item.name}}</option>
+    </select>
+    <!-- <button class="btn btn-primary" type="submit">Enregistrer</button> -->
+    <button (click)=" selectPockemon(selected)">text</button>
+    <h3>Pokemons list </h3>
+    
+
+
+    
+    <mat-form-field  >
+      <mat-label>Search pokemon</mat-label>
+      <input matInput [(ngModel)]="test" >
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-select [(ngModel)]="selected">
+         <mat-option *ngFor="let item of pockemons|filterPokemonPipe:'name':test" [value]="item">
+          {{item.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <app-affiche-infos *ngIf="pokemon"  [pokemon]="pokemon"></app-affiche-infos>
+
+
+    
+</div>

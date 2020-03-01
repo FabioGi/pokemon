@@ -1,0 +1,33 @@
+<div >
+    <h1>id</h1> {{pokemon.id}}
+    <h1>nom</h1> {{pokemon.name}}
+    <h1>base experience</h1> {{pokemon.base_experience}}
+    <h1>height</h1> {{pokemon.height}}
+    <h1>weight</h1> {{pokemon.weight}}
+    <h1>img</h1> {{pokemon.img}}
+    <h1>name</h1> {{pokemon.name}}
+    <h1>order</h1> {{pokemon.order}}
+    <div *ngFor="let stat of pokemon.stats" >
+         
+    </div>
+
+    <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{pokemon.name}}</mat-card-title>
+          <mat-card-subtitle>#{{pokemon.id}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="{{pokemon.img}}" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p *ngFor="let stat of pokemon.stats" >
+              {{stat.name}}
+              {{stat.baseStat}}
+              {{stat.effort}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+      </mat-card>
+</div>

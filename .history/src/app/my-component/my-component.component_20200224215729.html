@@ -1,0 +1,59 @@
+<h2>My Pockemeon</h2>
+<!-- <form (ngSubmit)="onSubmit(f)" #f="ngForm"> -->
+      <input [(ngModel)]="test"  >
+    <!-- like -->
+    <select [(ngModel)]="selected" >
+        <option *ngFor="let item of pockemons|filterPokemonPipe:'name':test" [ngValue]="item" >{{item.name}}</option>
+    </select>
+    <!-- <button class="btn btn-primary" type="submit">Enregistrer</button> -->
+    <button (click)=" selectPockemon(selected)">text</button>
+    <h3>Pokemons list </h3>
+    <app-affiche-infos *ngIf="pokemon"  [pokemon]="pokemon"></app-affiche-infos>
+
+    <div class="flexbox-parent">
+      <div layout="row" layout-align="center center" style="min-height: 500px">
+       <div flex="15">First line</div>
+       <div flex="15">Second line</div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div  fxLayout="row wrap">
+
+      <h1 fxFlex="100">data</h1>
+      <h2 fxFlex="100">
+        <span><strong>data</strong></span> &nbsp;
+        <span>Genre : data<br></span>
+        <span  class="grey">Last update : 
+          <strong>data</strong>
+        </span>
+        <!-- <span *ngIf="event.origine">Origine : {{ event.origine}}</span>  -->
+        <!-- <span *ngIf="event.tourtitle">Tour : {{ event.tourtitle }}</span><br> -->
+      </h2>
+  
+      <div fxLayout="row wrap" fxFlex="100">
+  
+        <span fxFlex="100" *ngIf="artists | async; let artists">
+          
+        </span>
+  
+        <div fxFlex="100" [ngStyle]="{'padding-bottom':'20px'}">
+          <mat-radio-group color="warn">
+              <mat-radio-button color="warn" value="Ballet">Ballet</mat-radio-button>
+              <mat-radio-button color="warn" value="Chamber Music">Chamber Music</mat-radio-button>
+              <mat-radio-button color="warn" value="Concerto">Concerto</mat-radio-button>
+              <mat-radio-button color="warn" value="Opera Staged">Opera Staged</mat-radio-button>
+              <mat-radio-button color="warn" value="Opera Concert">Opera Concert</mat-radio-button>
+              <mat-radio-button color="warn" value="Recital">Recital</mat-radio-button>
+              <mat-radio-button color="warn" value="Symphonic">Symphonic</mat-radio-button>
+              <mat-radio-button color="warn" value="Vocals">Vocals</mat-radio-button>
+          </mat-radio-group>
+        </div>
+          
+      </div>
+  
+  </div>

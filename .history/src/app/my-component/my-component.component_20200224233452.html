@@ -1,0 +1,24 @@
+<div class="center">
+  <h2>My Pockemeon</h2>
+
+
+
+    
+    <mat-form-field  >
+      <mat-label>Search pokemon</mat-label>
+      <input matInput [(ngModel)]="test" >
+    </mat-form-field>
+
+    <mat-form-field>
+      <select matNativeControl [(ngModel)]="selected"  (ngModelChange) = "selectPockemon(selected)">
+         <option *ngFor="let item of pockemons|filterPokemonPipe:'name':test" [ngValue]="item">
+          {{item.name}}
+        </option>
+      </select>
+    </mat-form-field>
+   <button mat-button (click)=" selectPockemon(selected)">Action</button>
+    <app-affiche-infos *ngIf="pokemon"  [pokemon]="pokemon"></app-affiche-infos>
+
+
+    
+</div>

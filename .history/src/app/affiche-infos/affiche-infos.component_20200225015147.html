@@ -1,0 +1,25 @@
+
+    <mat-card class="example-card">
+        <mat-card-header>
+          <!-- <div mat-card-avatar class="example-header-image"></div> -->
+          <mat-card-title>#{{pokemon.id}} {{pokemon.name}}</mat-card-title>
+          <mat-card-subtitle>{{pokemon.base_experience}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="{{pokemon.img}}" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <h4>Stats</h4>
+          <ul *ngFor="let stat of pokemon.stats" >
+            <li>
+                {{stat.name}}
+                {{stat.baseStat}}
+                {{stat.effort}}
+            </li>
+              
+          </ul>
+        </mat-card-content>
+        <mat-card-actions>
+          <span>heigth {{pokemon.height}}</span><br>
+          <span>weight {{pokemon.weight}}</span><br>
+          <span>order {{pokemon.order}}</span><br>
+        </mat-card-actions>
+      </mat-card>

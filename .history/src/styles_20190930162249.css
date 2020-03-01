@@ -1,0 +1,248 @@
+/* You can add global styles to this file, and also import other style files */
+/*@import "~bootstrap/dist/css/bootstrap.css";*/
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+/*@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";*/
+/*@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";*/
+/*@import "~@angular/material/prebuilt-themes/purple-green.css";*/
+
+* {
+  /*font-family: 'Source Sans Pro', sans-serif;*/
+	font-family: 'Heebo', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+  /*font-family: 'Alegreya Sans', sans-serif;*/
+  /*font-family: 'Barlow Semi Condensed', sans-serif;  */
+  /*font-family: 'Open Sans', sans-serif;*/
+	outline: 0;
+}
+
+html,body {
+  margin: 0 !important;
+  height: 100%;
+}
+
+a, a:focus, a:active {
+   outline: 0;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.max-width-table {
+	max-width: 1000px !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.button-lang {
+    position: absolute;
+    top: 20px;
+    right: 90px;
+}
+
+.edit-button {
+  position: absolute !important;
+  right: 30px !important;
+  top: 30px !important;
+  box-shadow: none !important;
+  background-color: #000;
+  color: #FFF;
+}
+
+
+
+.admin-menu {
+  background-color: #000;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  padding: 5px 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-bottom-left-radius: 20px;  
+}
+
+
+
+
+.span-button {
+  background-color: #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.span-button:hover {
+  background-color: #000;
+  color: #FFF;  
+}
+
+
+.mobile-title {
+  -webkit-transform: none !important;
+  transform: none !important;
+  font-size: 1.7em !important;
+  letter-spacing: -1px;
+  color: #2e3192 !important;
+  text-transform: uppercase;
+  font-weight: 900 !important;
+  padding: 20px 0 0 90px !important;
+}
+
+
+.mat-card-cb mat-card-title {
+  color: #2e3192;
+  font-size: 2em !important;
+  font-weight: 400 !important;
+
+}
+
+
+.noshadow {
+  box-shadow: none !important;
+}
+
+.nocss {
+  box-shadow: none !important;
+}
+
+.logo-bo {
+  width: 300px;
+  height: auto;
+  padding: 50px 0 0 100px;
+}
+
+.fl {
+  float: left;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+
+.bubble {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  width: 26px;height: 26px;	
+  line-height: 26px;
+  -webkit-border-radius: 13px;-moz-border-radius: 13px;border-radius: 13px;  
+  text-align: center;
+  display: block;
+  margin-right: 10px;
+  font-size: 0.7em;
+}
+
+mat-card-header {
+  padding-top: 20px;
+}
+
+mat-card-title {
+  font-size: 1.2em !important;
+  line-height: 0.5em;
+  font-weight: 300;
+}
+
+mat-spinner {
+  margin: 0 auto;
+}
+
+.bg-cover {
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+
+.nw-editor__src, .nw-editor__res {
+  padding: 10px !important;
+}
+
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.searchDialog, .footerDialog, .filterEventsDialog {
+  background-color: rgba(46, 49, 146, 0.9);
+}
+.searchDialogPanel mat-dialog-container {
+  background-color: #fff200;
+  background: #fff200;
+  color: #2e3192;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.searchDialogPanel h3 {
+  line-height: 1.1em;
+  font-size: 1em;
+  margin: 10px 0 20px;
+  padding: 0;
+}
+
+.filterEventsDialogPanel .mat-dialog-container {
+  padding: 0;
+}
+.filterEventsDialogPanel,.filterEventsDialogPanel .mat-dialog-container {
+  background-color: #2e3192;  
+}
+
+
+@media print{
+  .doNotPrint {
+    display:none !important
+  } 
+
+  .mode-A4 {
+    box-shadow: none !important;
+  }
+
+  .logofortouringpage {
+    margin-left: 0; 
+    padding: 10px 10px 0;
+  }
+}
+
+
+
+.darkblue { color: #2e3192 } .bg-darkblue { background-color: #2e3192 }
+.blue { color: #0c6bad }
+.bleuciel { color: #009de0 }
+.bluegreen { color: #0099a2 }
+.lightblue { color: #d6dded; }
+
+.pianoblue { color: #0099a1; } .bg-pianoblue, .pianolink, .bg-piano { background-color: #0099a1; }
+.pianolink:hover { background-color: #802b43 }
+.pianobrown { color: #802b43; } .bg-pianoblue { background-color: #802b43; }
+.pianohover:hover { background-color: #0099a1; color: #FFF; }
+
+.compopink { color: #cd5393; } .bg-compopink, .compolink { background-color: #cd5393; } 
+.compolink:hover { background-color: #6f6f6f }
+.compogrey { color: #6f6f6f; } .bg-compogrey { background-color: #6f6f6f; }
+.compohover:hover, .bg-compo { background-color: #cd5393; color: #FFF }
+
+.comdu-link { background-color: #8cb63c !important;}
+.comdu-link:hover { background-color: #2e3192 !important;}
+.hover-condu:hover { background-color: #8cb63c; color: #FFF; }
+
+.cello-link, .bg-cello, .bg-viola, .bg-violin { background-color: #009de0 !important;}
+.cello-link:hover { background-color: #dc911b !important;}
+.hover-cello:hover { background-color: #009de0 !important; color: #FFF; }
+
+.marron { color:#dc911b; }
+.green { color: #16979e; }
+.green2 { color:#8cb63c; } .bg-green2 { background-color: #8cb63c }
+.lightgreen { color: #e5f0f0 }
+.grey{ color:#a1a5a4; }
+.purple { color:#802b43; }
+.red {color:#e90b18;} .bg-red { background-color: #e90b18 !important}
+.yellow{color: #fff200;} .bg-yellow { background-color:#fff200  }
+
+
+.black { color:#000; } .bg-black { background-color: #000 }
+
+
+
